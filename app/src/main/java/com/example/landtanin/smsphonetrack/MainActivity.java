@@ -1,7 +1,7 @@
 package com.example.landtanin.smsphonetrack;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView showLocation;
     private Button requestLocation;
+    //private String Lat = getLat().toString();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    String lat = Double.toString(gps.getLat());
+
     private void bindWidget() {
 
         showLocation = (TextView) findViewById(R.id.showLocation);
@@ -30,16 +34,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void buttonController() {
 
         requestLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //showLocation.setText();
+                showLocation.setText(lat);
 
             }
         });
 
     }
+
+
 }
