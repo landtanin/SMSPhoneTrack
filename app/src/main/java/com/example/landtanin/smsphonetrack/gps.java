@@ -8,6 +8,8 @@ import android.os.Bundle;
  * Created by landtanin on 3/4/16 AD.
  */
 
+//http://stackoverflow.com/questions/8769043/how-to-start-the-gps-positioning-in-background-thread
+
 public class gps implements LocationListener {
 
     private static double lat =0.0;
