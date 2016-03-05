@@ -17,4 +17,10 @@
         </activity>
     </application>
 
+    <uses-feature
+
+        android:name="android.hardware.telephony"
+
+        />
+
 </manifest>

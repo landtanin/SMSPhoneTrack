@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    String lat = Double.toString(gps.getLat());
+    //String lat = Double.toString(gps.getLat());
 
     private void bindWidget() {
 
@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                showLocation.setText(lat);
+                showLocation.setText("");
 
             }
         });
 
     }
+
 
 
 }
